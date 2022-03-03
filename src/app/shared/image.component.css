@@ -1,0 +1,8 @@
+
+.crop {
+    overflow: hidden;
+}
+img {
+    width: 20px;
+    height: 20px;
+}

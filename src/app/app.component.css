@@ -1,0 +1,104 @@
+
+.container-body {
+    background-color:  hsl(235, 46%, 20%) ;
+    height: 100vh;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+.grid-col {
+    display: grid;
+    grid-template-columns: 180px 180px 180px;
+    grid-template-rows: 200px;
+    grid-gap: 10px;
+}
+.cont {
+  position: absolute;
+  top: 120px;
+  left: 150px;
+  width: 90%;
+}
+
+.card-body > p{
+    color: hsl(236, 59%, 69%);
+}
+p.weekly {
+    position: relative;
+    top: -5px;
+}
+h3.weekly{
+    position: relative;
+    top: -10px;
+    margin-left: 3px;
+}
+p.monthly {
+    position: relative;
+    top: -5px;
+}
+h3.monthly {
+    position: relative;
+    top: -5px;
+    margin-left: 3px;
+}
+.monthly {
+position: relative;
+}
+button {
+    border: none;
+    margin: 10px;
+    display: block;
+    background: none;
+    color: hsl(236, 50%, 54%);
+}
+button:visited, button:focus {
+    color:  #fff;
+}
+
+.pb-4 {
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 5px;
+    color: #fff;
+}
+.first-card {
+    width: 200px;
+    height: 398px;
+    margin-right: 0;
+}
+.items {
+    margin-left: -60px;
+}
+
+.pb-1 {
+    background-color: hsl(235, 46%, 20%);
+}
+.card {
+    border-radius: 5px;
+}
+
+.card_items_body {
+    background-color: hsl(235, 46%, 20%);
+    height: 80%;
+   
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius : 8px;
+}
+
+.ellipse {
+    position: relative;
+    left: 5px;
+}
+app-image {
+    position: relative;
+    left: 60%;
+}
+.top img{
+    position: relative;
+    left: 60%;
+}
+.top {
+    background-color: hsl(195, 74%, 62%);
+}

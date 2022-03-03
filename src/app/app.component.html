@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+</head>
+<body>
+  <div class="container-body ml-5">
+<div class="row cont">
+  <div class="col-md-3 pb-5">
+    <div class="card first-card">
+      <div class="card-body pb-4">
+        <img [src]="imageUrl" alt="" title="Jeremy's image" 
+        height="50px" width="50px" class="mb-3 d-block">
+        <small>Report For</small>
+        <h4>Jeremy</h4>
+        <h4>Robson</h4>
+      </div>
+      <div class="card pb-1">
+        <div class="card-body">
+          <button (click)="showDaily()">Daily</button>
+          <button (click)="showWeekly()">Weekly</button>
+          <button (click)="showMonthly()">Monthly</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-9 items">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 grid-col">
+    <div class="card card_items" *ngFor="let data of data" >
+
+      <div class="top card-img-top">
+      <img src="../assets/images/icon-play.svg" alt="" class=""
+      width="70px" height="30px"></div>
+
+      <div class="card-body card_items_body">
+        <div class="row">
+          <div class="col-9">
+        <p>{{data.title}}</p>
+        </div>
+        <div class="col-3">
+        <img src="../assets/images/icon-ellipsis.svg" class="ellipse" alt="" width="12px" height="5px">
+        </div>
+        </div>
+        <h3 class="daily" *ngIf="daily">{{data.timeframes.daily.current}} hrs</h3>
+        <p class="daily" *ngIf="daily">Last Week -{{data.timeframes.daily.previous}} hrs</p>
+        <h3 class="weekly" *ngIf="weekly">{{data.timeframes.weekly.current}} hrs</h3>
+        <p class="weekly" *ngIf="weekly">Last Week -{{data.timeframes.weekly.previous}} hrs</p>
+        <h3 class="monthly" *ngIf="monthly">{{data.timeframes.monthly.current}} hrs</h3>
+        <p class="monthly" *ngIf="monthly">Last Week -{{data.timeframes.monthly.previous}} hrs</p>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
