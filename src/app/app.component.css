@@ -81,7 +81,6 @@ button:visited, button:focus {
 .card_items_body {
     background-color: hsl(235, 46%, 20%);
     height: 80%;
-   
     color: #fff;
     border-top-left-radius: 8px;
     border-top-right-radius : 8px;
@@ -90,6 +89,7 @@ button:visited, button:focus {
 .ellipse {
     position: relative;
     left: 5px;
+    cursor: pointer;
 }
 app-image {
     position: relative;
@@ -101,4 +101,44 @@ app-image {
 }
 .top {
     background-color: hsl(195, 74%, 62%);
+}
+
+@media screen and (max-width: 768px) {
+    
+    .cont {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+    }
+    .container-body {
+        background-color:  hsl(235, 46%, 20%) ;
+        height: 100%;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+   .items {
+    width: 80%;
+   }
+    .grid-col {
+        display: flex;
+        margin-left: -20px;
+        flex-direction: column;
+
+    }
+    .container-body {
+        width: 90%;
+        height: fit-content;
+        background-color: hsl(235, 46%, 20%);
+    }
+    .items-top {
+        width: 90vw;
+    }
+    .first-card{
+        width: 100%;
+        margin-left: -100px;
+    }
+    
+    
 }
